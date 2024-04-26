@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleindex.css">
+    <style>
+        .navbar-logo img {
+            height: 50px; /* Adjust the height of the logo as desired */
+        }
+
+        .navbar-buttons {
+            justify-content: center;
+        }
+
+        .navbar-search {
+            flex-grow: 1; /* Let the search bar take as much space as it needs */
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+       
+        <div class="navbar-logo">
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\Screenshot 2024-04-26 221616.png" alt="Your Logo">
+            </a>
+        </div>
+       
+        <div class="navbar-buttons">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Report Problem</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">About the developers</button>
+                </li>
+            </ul>
+        </div>
+       
+        <div class="navbar-search">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+        <div class="container">
+            
+            <div class="row dark-row">
+                <h3>Stories</h3>
+                <div class="col"><div class="card" style="width: 18rem;">
+                    <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\day1 (3).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">James Grover Gaerlan.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"><div class="card" style="width: 18rem;">
+                    <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\day1 (3).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Benjielle Lopez.</p>
+                    </div>
+                  </div></div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                    <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\day1 (3).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Romeo Gacusan Jr.</p>
+                         </div>
+                        </div></div>
+
+            </div>
+            <div class="row light-row">
+                <div class="col-md-6">
+                    <h2>Image Feed</h2>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\download (1).jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Romeo Gacusan Jr</h5>
+                                  <p class="card-text">check my build .</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                         
+                    </div>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\download.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">James Gaerlan</h5>
+                                <p class="card-text">check my build .</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+
+                    </div>
+                    <div class="card mb-3" style="max-width: 540px;">
+                       
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\images.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Benjiell Lopez</h5>
+                                <p class="card-text">check my build .</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Video Feed</h2>
+                    <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\thumb3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">check my video.</p>
+                          <a href="#" class="btn btn-primary">visit link</a>
+                        </div>
+                      </div>
+                      
+                      <div class="card" style="width: 18rem;">
+                        <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\thumb2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Handsome</h5>
+                          <p class="card-text">check my video.</p>
+                          <a href="#" class="btn btn-primary">visit link</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    </div>
+</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+        <div class="container">
+            <div class="row gutters">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="account-settings">
+                        <div class="user-profile">
+                            <div class="user-avatar">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
+                            </div>
+                            <h5 class="user-name">Romeo Gacusan Jr</h5>
+                            <h6 class="user-email">romeogacusan09@gmail.com</h6>
+                        </div>
+                        <div class="about">
+                            <h5>About</h5>
+                            <p>I'm romiyo. Full Copyer HAHAH I enjoy Copying user-centric, delightful and human experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h6 class="mb-2 text-primary">Personal Details</h6>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="eMail">Email</label>
+                                <input type="email" class="form-control" id="eMail" placeholder="Enter email ID">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="website">Website URL</label>
+                                <input type="url" class="form-control" id="website" placeholder="Website url">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h6 class="mt-3 mb-2 text-primary">Address</h6>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="Street">Street</label>
+                                <input type="name" class="form-control" id="Street" placeholder="Enter Street">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="ciTy">City</label>
+                                <input type="name" class="form-control" id="ciTy" placeholder="Enter City">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="sTate">State</label>
+                                <input type="text" class="form-control" id="sTate" placeholder="Enter State">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="zIp">Zip Code</label>
+                                <input type="text" class="form-control" id="zIp" placeholder="Zip Code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="text-right">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+    </div>
+
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+        <div class="container">
+            <h1>Report Problems</h1>
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+
+    </div>
+    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+
+        <div class="about-section">
+            <h1>About Us Page</h1>
+            <p>Some text about who we are and what we do.</p>
+            <p>Resize the browser window to see that this page is responsive by the way.</p>
+          </div>
+          
+          <h2 style="text-align:center">Our Team</h2>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\jear.jpg" alt="Jane" style="width:100%">
+                <div class="container">
+                  <h2>Romeo Gacusan Jr</h2>
+                  <p class="title">developer</p>
+                  <p>From:Candon City <br>age:21 <br> sex:male
+                  </p>
+                  <p>romeogacusan09.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+                <div class="container">
+                  <h2>James Gaerlan</h2>
+                  <p class="title">Art Director</p>
+                  <p>From:Candon City <br>age:20 <br> sex:male</p>
+                  <p>jamesgaerlanexample.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="C:\Users\jr\Desktop\MCO-Gacusan-Lopez-Gaerlan-Manansala-CS3B\assets\benjwel.jpg" alt="John" style="width:100%">
+                <div class="container">
+                  <h2>Benjielle Lopez</h2>
+                  <p class="title">Financial supporter haha</p>
+                  <p>From:Candon City <br>age:20 <br> sex:male</p>
+                  <p>john@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
